@@ -8,7 +8,7 @@ const app = express();
 const port = 3072;
 
 app.use(cors({
-    origin: ['http://3.110.86.76:3072', 'http://127.0.0.1:5501', 'http://127.0.0.1:5503', 'http://3.110.86.76:9011/', 'http://3.110.86.76:9012/'],
+    origin: ['http://3.110.86.76:3072', 'http://127.0.0.1:5501', 'http://127.0.0.1:5503', 'http://3.110.86.76:9011', 'http://3.110.86.76:9012'],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }));
