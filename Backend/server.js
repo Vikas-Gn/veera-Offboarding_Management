@@ -8,7 +8,7 @@ const app = express();
 const port = 3072;
 
 app.use(cors({
-    origin: ['http://3.110.86.76:3072', 'http://127.0.0.1:5501', 'http://127.0.0.1:5503', 'http://3.110.86.76:9011', 'http://3.110.86.76:9012'],
+    origin: ['http://43.205.116.109:3072', 'http://127.0.0.1:5501', 'http://127.0.0.1:5503', 'http://43.205.116.109:9011', 'http://43.205.116.109:9012'],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }));
@@ -146,5 +146,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://3.110.86.76:${port}`);
+    console.log(`Server running at http://43.205.116.109:${port}`);
 });
